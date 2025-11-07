@@ -1,0 +1,13 @@
+[package]
+name = "Lab-5-graficas"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1"
+winit = "0.29"
+wgpu = "0.20"
+pollster = "0.3"
+bytemuck = { version = "1", features = ["derive"] }
+glam = "0.28"
+env_logger = "0.11"

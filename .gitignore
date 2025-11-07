@@ -1,0 +1,70 @@
+# --------- RUST / CARGO ----------
+/target/
+**/*.rs.bk
+# Artefactos temporales y metadatos
+*.rmeta
+*.dSYM
+*.pdb
+
+# Si este proyecto es una aplicación/binary, **NO** ignores Cargo.lock.
+# (Déjalo trackeado para builds reproducibles)
+# Si fuera una librería, podrías descomentar la siguiente línea:
+# Cargo.lock
+
+# --------- WGPU / SHADERS / BUILD CACHES ----------
+# Compilados temporales de shaders (si los generas)
+*.spv
+*.spirv
+*.metal
+*.msl
+*.hlsl
+*.dxil
+
+# Caches opcionales
+/assets/cache/
+**/*.cache
+
+# --------- SALIDAS / CAPTURAS (PERSONALIZA SI QUIERES) ----------
+# Capturas o framebuffers generados por tus labs
+/output*.bmp
+/framebuffer*.bmp
+/screenshot*.png
+
+# --------- EDITORES / IDE ----------
+# VS Code: ignora todo menos archivos útiles del workspace
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# Visual Studio / JetBrains
+.vs/
+.idea/
+*.iml
+
+# --------- SO / SISTEMA ----------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# --------- LOGS / TEMP ----------
+*.log
+*.tmp
+*.temp
+
+# --------- MISC ----------
+# Archivos de empaquetado o distribución accidentales
+*.zip
+*.7z
+*.tar
+*.tar.gz
